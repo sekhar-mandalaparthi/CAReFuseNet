@@ -326,8 +326,18 @@ body {
   transform: translateX(-50%);
   width: 60px;
   height: 3px;
-  background: var(--gradient-accent);
+  /*background: var(--gradient-accent);*/
   border-radius: 2px;
+}
+
+/* Sub-Section Titles */
+.subtitle {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 700 !important;
+  color: var(--text-primary);
+  margin-bottom: 2rem !important;
+  position: relative;
+  padding-bottom: 1rem;
 }
 
 /* Content Improvements */
