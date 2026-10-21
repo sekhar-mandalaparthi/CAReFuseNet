@@ -317,21 +317,19 @@
   </div>
 </section>
 
-
 <!-- Teaser Image (Figure 1 of paper)-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <div style="text-align: center;">
-        <img src="static/images/CAReFuseNet_Fig1.png"
-            alt="CAReFuseNet Capability"
-            style="max-width: 600px; width:100%; height: auto;">
+      <div class="content has-text-justified">
+        <!-- Figure: First (teaser) figure -->
+        <figure class="result-figure narrow">
+          <img src="static/images/CAReFuseNet_Fig1.png" alt="CAReFuseNet Capability">
+          <figcaption>
+            Despite variation in pose, appearance, shape and size between reference and target object instances, our CAReFuseNet segments camouflaged objects in the input image under the guidance of the salient reference image.
+          </figcaption>
+        </figure>
       </div>
-      <!-- TODO: Replace with your video description -->
-      <p>
-        Despite variation in pose, appearance, shape and size between reference and target object instances, our CAReFuseNet segments camouflaged objects in the input image under the guidance of the salient reference image.
-      </p>
     </div>
   </div>
 </section>
@@ -372,50 +370,53 @@
 <!-- End paper abstract -->
 
 <!-- Method -->
-<section class="section">
+<section class="section" id="method-section">
   <div class="container is-max-desktop">
       <div class=hero-body>
         <h2 class="title is-3">Method</h2>
         <div class="content has-text-justified">
-          <!-- TODO: Replace with your content -->
-          <img src="static/images/CAReFuseNet.png" alt="CAReFuseNet Architecture">
-          <!-- TODO: Replace with your description -->
-          <p>            
-            <strong>Overall architecture of CAReFuseNet:</strong>
-            Ref-Image Encoder extracts features from reference images
-            containing salient target objects. Ref-Feature Combiner
-            combines individual reference image features to form a common feature
-            representation, <em>E</em>, of the target object.
-            Camo-Image Encoder extracts multi-scale features from
-            input camouflaged image <em>I<sup> camo</sup></em>.
-            CAReFuse Module fuses feature representations of the
-            salient target object with multi-scale features of
-            <em>I<sup> camo</sup></em>. Segmentation Decoder
-            generates a segmentation mask using the reference-conditioned feature
-            representations.  
-          </p>
+          <!-- Figure: CAReFuseNet Architecture -->
+          <figure class="result-figure">
+            <img src="static/images/CAReFuseNet.png" alt="CAReFuseNet Architecture">
+            <figcaption>
+              <strong>Overall architecture of CAReFuseNet:</strong>
+              Ref-Image Encoder extracts features from reference images
+              containing salient target objects. Ref-Feature Combiner
+              combines individual reference image features to form a common feature
+              representation, <em>E</em>, of the target object.
+              Camo-Image Encoder extracts multi-scale features from
+              input camouflaged image <em>I<sup> camo</sup></em>.
+              CAReFuse Module fuses feature representations of the
+              salient target object with multi-scale features of
+              <em>I<sup> camo</sup></em>. Segmentation Decoder
+              generates a segmentation mask using the reference-conditioned feature
+              representations.
+            </figcaption>
+          </figure>
           <br>
-          <img src="static/images/CAReFuse_Module.png" alt="CAReFuse Module">
-          <!-- TODO: Replace with your description -->
-          <p>
-            <strong>CAReFuse Module</strong>: cross-attention-based feature
-            fusion module that fuses reference image features with multi-scale
-            camouflaged image features. (a) <strong>Cross-Attention Fusion (CAF)
-            Module:</strong> fuses reference image features <em>E</em> with multi-scale
-            camouflaged image features <em>F</em><sub>1</sub>, <em>F</em><sub>2</sub>,
-            <em>F</em><sub>3</sub>, and <em>F</em><sub>4</sub> individually.
-            (b) <strong>Cross-Attention (CA) Module:</strong> performs multi-head
-            cross-attention using camouflaged image features for <em>queries</em> and
-            reference image features for <em>keys</em> and <em>values</em>.
-            (c) <strong>Multi-Scale Fusion (MSF) Module:</strong> fuses
-            reference-conditioned multi-scale features of the camouflaged image into
-            a single feature volume through cross-scale fusion.
-            (d) <strong>Cross-Scale Fusion (CSF) Module:</strong> fuses a feature volume
-            of lower spatial dimension with a feature volume of higher spatial
-            dimension through convolution and upsampling operations.
-            &oplus; — element-wise sum, &otimes; — element-wise multiplication, and
-            &#9426; — concatenation operation.
-          </p>
+          <!-- Figure: CAReFuse Module -->
+           <figure class="result-figure">
+            <img src="static/images/CAReFuse_Module.png" alt="CAReFuse Module">
+            <figcaption>
+              <strong>CAReFuse Module</strong>: cross-attention-based feature
+              fusion module that fuses reference image features with multi-scale
+              camouflaged image features. (a) <em>Cross-Attention Fusion (CAF)
+              Module:</em> fuses reference image features <em>E</em> with multi-scale
+              camouflaged image features <em>F</em><sub>1</sub>, <em>F</em><sub>2</sub>,
+              <em>F</em><sub>3</sub>, and <em>F</em><sub>4</sub> individually.
+              (b) <em>Cross-Attention (CA) Module:</em> performs multi-head
+              cross-attention using camouflaged image features for <em>queries</em> and
+              reference image features for <em>keys</em> and <em>values</em>.
+              (c) <em>Multi-Scale Fusion (MSF) Module:</em> fuses
+              reference-conditioned multi-scale features of the camouflaged image into
+              a single feature volume through cross-scale fusion.
+              (d) <em>Cross-Scale Fusion (CSF) Module:</em> fuses a feature volume
+              of lower spatial dimension with a feature volume of higher spatial
+              dimension through convolution and upsampling operations.
+              &oplus; — element-wise sum, &otimes; — element-wise multiplication, and
+              &#9426; — concatenation operation.
+            </figcaption>
+           </figure>
         </div>
       </div>
   </div>
@@ -423,86 +424,106 @@
 <!-- End Method -->
 
 <!-- Results -->
-<section class="section">
+<section class="section" id="results-section">
   <div class="container is-max-desktop">
       <div class=hero-body>
         <h2 class="title is-3">Results</h2>
         <h3 class="subtitle">Quantitative Results:</h3>
         <div class="content has-text-justified">
-          <!-- TODO: Replace with your content -->
-          <img src="static/images/model_comparison.png" alt="Model Comparison">
-          <!-- TODO: Replace with your description -->
-          <p>
-            <strong>Comparison with other Ref-COD models.</strong>
-            <code>-Ref</code>: R2CNet's referring framework applied to the existing COD
-            model (results taken from <a href="#">Zhang et al., (2025)</a>).
-            <strong>Tr.Params</strong>: Number of trainable parameters in millions.
-            <strong>Tot.Params</strong>: Number of total parameters in millions.
-            <strong>MACs</strong>: Multiply-accumulate operations in billions.
-            <strong>↑</strong>: the higher the better.
-            <strong>↓</strong>: the lower the better.
-            Settings: image size 352 × 352, number of reference images <em>K</em> = 5.
-            For Ours, metrics are reported as mean (± std) over three random seed runs.
-            The best two values are shown in <strong>bold</strong> and
-            <u>underline</u>, respectively. Results of R2CNet and UAT are taken from
-            their respective prior works.
-          </p>
+
+          <!-- Table: Comparison with other Ref-COD models -->
+          <figure class="result-figure">
+            <img src="static/images/model_comparison.png" alt="Model Comparison">
+            <figcaption>
+              <strong>Comparison with other Ref-COD models.</strong>
+              <em>-Ref</em>: R2CNet's referring framework applied to the existing COD
+              model (results taken from <a href="#">Zhang et al., (2025)</a>).
+              <em>Tr.Params</em>: Number of trainable parameters in millions.
+              <em>Tot.Params</em>: Number of total parameters in millions.
+              <em>MACs</em>: Multiply-accumulate operations in billions.
+              ↑: the higher the better.
+              ↓: the lower the better.
+              Settings: image size 352 × 352, number of reference images <em>K</em> = 5.
+              For Ours, metrics are reported as mean (± std) over three random seed runs.
+              The best two values are shown in <strong>bold</strong> and
+              <u>underline</u>, respectively. Results of R2CNet and UAT are taken from
+              their respective prior works.
+            </figcaption>
+          </figure>
           <br>
-          <div style="text-align: center;">
-          <img src="static/images/comparision_with_circod.png"
-            alt="High quality edges"
-            style="max-width: 600px; width: 100%; height: auto;">
-          </div>
-          <!-- TODO: Replace with your description -->
-          <p>
-            <strong>Comparison with CIRCOD (under the Ref-COD setting):</strong> Settings: image size
-            512 × 512, number of reference images <em>K</em> = 1. The best two values
-            are shown in <strong>bold</strong> and <u>underline</u>, respectively.
-            The results of CIRCOD are taken from the prior work
-            <a href="#">Gupta et al., (2025)</a>.
-          </p>
+          <!-- Table: Comparison with CIRCOD -->
+          <figure class="result-figure narrow">
+            <img src="static/images/comparision_with_circod.png" alt="Comparison with CIRCOD">
+            <figcaption>
+              <strong>Comparison with CIRCOD (under the Ref-COD setting):</strong> Settings: image size
+              512 × 512, number of reference images <em>K</em> = 1. The best two values
+              are shown in <strong>bold</strong> and <u>underline</u>, respectively.
+              The results of CIRCOD are taken from the prior work
+              <a href="#">Gupta et al., (2025)</a>.
+            </figcaption>
+          </figure>
           <br>
-          <div style="text-align: center;">
-          <img src="static/images/ablation_on_cd.png" alt="High quality edges">
-          </div>
-          <!-- TODO: Replace with your description -->
-          <p>
-            <strong>Ablation on channel dimension (i.e., <em>c</em><sub>d</sub>):</strong> The best values
-            are shown in <strong>bold</strong>. 256 is chosen as the default channel dimension, striking a balance between
-            performance and computational efficiency.
-          </p>
+          <!-- Table: Ablation on cd -->
+          <figure class="result-figure">
+            <img src="static/images/ablation_on_cd.png" alt="Ablation on Cd">
+            <figcaption>
+              <strong>Ablation on channel dimension (i.e., <em>c</em><sub>d</sub>):</strong> The best values
+              are shown in <strong>bold</strong>. 256 is chosen as the default channel dimension, striking a balance between
+              performance and computational efficiency.
+            </figcaption>
+          </figure>
           <br>
-          <div style="text-align: center;">
-          <img src="static/images/ablation_on_K.svg" alt="High quality edges">
+          <!-- Figure: Ablation on K -->
+          <figure class="result-figure">
+            <img src="static/images/ablation_on_K.svg" alt="Ablation on K">
+            <figcaption>
+              <strong>Ablation on <em>K</em>:</strong> Comparison among Ours-P, UAT, and R2CNet with respect to the ablation
+              experiment on the number of reference images (i.e., <em>K</em>), where
+              <em>K</em> is varied consistently between training and testing.
+            </figcaption>
+          </figure>
+          <br>
+          <!-- Two images side by side (stacked on mobile) -->
+          <div class="image-pair">
+            <figure class="result-figure">
+              <img src="static/images/ablation_on_RefFeatCombiner.png" alt="Ablation on Ref-Feat-Combiner">
+              <figcaption>
+                <strong>Ablation on Ref Feature Combiner:</strong>
+                <em>CA</em>: Channel Attention, <em>SA</em>: Spatial Attention, <em>CWA</em>: Channel-wise Average.
+                Metrics are reported as mean(&plusmn;std) over three random seed runs.
+              </figcaption>
+            </figure>
+
+            <figure class="result-figure">
+              <img src="static/images/ablation_on_CarefuseModule.png" alt="Ablation on CAReFuse module">
+              <figcaption>
+                <strong>Ablation on CAReFuse module:</strong>
+                <em>CAF</em>: Cross Attention Fusion, <em>MSF</em>: Multi Scale Fusion.
+                Metrics are reported as mean(&plusmn;std) over three random seed runs.
+              </figcaption>
+            </figure>
           </div>
-          <!-- TODO: Replace with your description -->
-          <p>
-            <strong>Ablation on <em>K</em>:</strong> Comparison among Ours-P, UAT, and R2CNet with respect to the ablation
-            experiment on the number of reference images (i.e., <em>K</em>), where
-            <em>K</em> is varied consistently between training and testing.
-          </p>
         </div>
         <br>
         <h3 class="subtitle">Qualitative Results:</h3>
         <div class="content has-text-justified">
-          <!-- TODO: Replace with your content -->
-          <img src="static/images/Qualitative_Eval.svg" alt="Qualitative Evaluation">
-          <!-- TODO: Replace with your description -->
-          <p>            
+          <!-- Figure: Qualitative Evaluation -->
+          <figure class="result-figure">
+            <img src="static/images/Qualitative_Eval.svg" alt="Qualitative Evaluation">
+            <figcaption>
             <strong>Qaulitative Evaluation:</strong> Visual comparison between the predicted masks of CAReFuseNet (Ours-P) and other Ref-COD methods (<em>i.e.</em> R2CNet, UAT).
-            Our method outperforms the rest.  
-          </p>
+            Our method outperforms the rest.
+          </figcaption>
+          </figure>
           <br>
-          <div style="text-align: center;">
-          <img src="static/images/High_Quality_Edges.svg"
-            alt="High quality edges"
-            style="max-width: 600px; width: 100%; height: auto;">
-          </div>
-          <!-- TODO: Replace with your description -->
-          <p>
-            <strong>High Quality masks:</strong> Comparison between the predicted masks of R2CNet, UAT, and Ours-P for camouflaged objects with high-frequency edges,
-            highlighting the superior mask quality and finer detail capture of Ours-P.
-          </p>
+          <!-- Figure: High quality edges -->
+          <figure class="result-figure narrow">
+            <img src="static/images/High_Quality_Edges.svg" alt="High quality edges">
+            <figcaption>
+              <strong>High Quality masks:</strong> Comparison between the predicted masks of R2CNet, UAT, and Ours-P for camouflaged objects with high-frequency edges,
+              highlighting the superior mask quality and finer detail capture of Ours-P.
+            </figcaption>
+          </figure>
         </div>
       </div>
   </div>

@@ -759,5 +759,75 @@ a:focus {
   }
 }
 
+/* Shared figure + caption style (higher specificity to beat Bulma's .content figure rules) */
+.content figure.result-figure,
+.content figure.result-figure:not(:first-child) {
+  margin: 0 0 1.5rem 0;      /* kills Bulma's margin-top: 2em and side margins */
+}
 
+.content figure.result-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
+.content figure.result-figure figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  font-style: normal;        /* removes italic */
+  text-align: justify;
+}
+
+/* Narrower, centered variant (the CIRCOD table) */
+.content figure.result-figure.narrow {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Side-by-side pair */
+.image-pair {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: flex-start;   /* both figures start at the same top edge */
+  margin-bottom: 1.5rem;
+}
+
+.content .image-pair figure.result-figure,
+.content .image-pair figure.result-figure:not(:first-child) {
+  flex: 1 1 0;
+  min-width: 0;
+  margin: 0;
+}
+
+/* Mobile: stack vertically */
+@media (max-width: 768px) {
+  .image-pair {
+    flex-direction: column;
+  }
+
+  .content .image-pair figure.result-figure,
+  .content .image-pair figure.result-figure:not(:first-child) {
+    flex: none;
+    width: 100%;
+  }
+}
+
+/* Tighten the gap between Method and Results */
+#method-section {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+#method-section .hero-body {
+  padding-bottom: 0;
+}
+
+#results-section {
+  padding-top: 1rem;
+}
+
+#results-section .hero-body {
+  padding-top: 0;
+}
