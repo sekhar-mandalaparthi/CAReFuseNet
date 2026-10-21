@@ -6,24 +6,24 @@
   
   <!-- Primary Meta Tags -->
   <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="CAReFuseNet - AUTHOR_NAMES">
+  <meta name="title" content="CAReFuseNet - Sekhar Mandalaparthi, Arup Dasgupta, Anirban Chakraborty">
   <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <meta name="description" content="A parameter-effecient framework for Referring Camouflaged Object, featuring a cross-attention based reference feature fusion module.">
   <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
+  <meta name="keywords" content="camouflage, object detection, feature fusion, machine learning, computer vision, AI">
   <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <meta name="author" content="Sekhar Mandalaparthi, Arup Dasgupta, Anirban Chakraborty">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
   <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
+  <meta property="og:site_name" content="Visual Computing Lab">
   <!-- TODO: Same as paper title above -->
   <meta property="og:title" content="CAReFuseNet">
   <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <meta property="og:description" content="A parameter-effecient framework for Referring Camouflaged Object, featuring a cross-attention based reference feature fusion module.">
   <!-- TODO: Replace with your actual website URL -->
   <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
   <!-- TODO: Create a 1200x630px preview image and update path -->
@@ -76,9 +76,10 @@
   <!-- TODO: Replace with your paper title and authors -->
   <title>CAReFuseNet: Cross Attention Fusion Network for Ref-COD</title>
   
-  <!-- Favicon and App Icons -->
+  <!-- Favicon and App Icons 
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link rel="apple-touch-icon" href="static/images/favicon.ico">
+  -->
   
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
@@ -178,403 +179,352 @@
   }
   </script>
 </head>
-<body>
-
-
-  <!-- Scroll to Top Button -->
-  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
-    <i class="fas fa-chevron-up"></i>
-  </button>
-
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
+  <body>
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+      <i class="fas fa-chevron-up"></i>
     </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
 
-  <main id="main-content">
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">
-              CAReFuseNet: Cross Attention Fusion Network for Referring Camouflaged Object Detection
-            </h1>
-            <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Sekhar Mandalaparthi</a><sup>1,2</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Arup Dasgupta</a><sup>1,2</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Anirban Chakraborty</a><sup>3</sup>
-                  </span>
-                  </div>
-
+    <main id="main-content">
+      <section class="hero">
+          <div class="hero-body">
+            <div class="container is-max-desktop">
+              <div class="columns is-centered">
+                <div class="column has-text-centered">
+                  <!-- TODO: Replace with your paper title -->
+                  <h1 class="title is-1 publication-title">
+                    CAReFuseNet: Cross Attention Fusion Network for Referring Camouflaged Object Detection
+                  </h1>
                   <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block"><sup>1</sup>Homi Bhabha National Institute</span>
-                    <span class="author-block"><sup>2</sup>Indira Gandhi Centre for Atomic Research</span>
-                    <span class="author-block"><sup>3</sup>Indian Institute of Science<br>TMLR 2026</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <!--<span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
-                  </div>
+                    <!-- TODO: Replace with your paper authors and their personal links -->
+                    <span class="author-block">
+                      <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Sekhar Mandalaparthi</a><sup>1,2</sup>,</span>
+                      <span class="author-block">
+                        <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Arup Dasgupta</a><sup>1,2</sup>,</span>
+                        <span class="author-block">
+                          <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Anirban Chakraborty</a><sup>3</sup>
+                        </span>
+                        </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
+                        <div class="is-size-5 publication-authors">
+                          <!-- TODO: Replace with your institution and conference/journal info -->
+                          <span class="author-block"><sup>1</sup>Homi Bhabha National Institute</span>
+                          <span class="author-block"><sup>2</sup>Indira Gandhi Centre for Atomic Research</span>
+                          <span class="author-block"><sup>3</sup>Indian Institute of Science</span>
+                          <br>
+                          <!-- TODO: Remove this line if no equal contribution -->
+                          <!--<span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                          <span class="paper-block">
+                            <b style="color: #f41c1c;">TMLR 2026</b>
+                          </span>
+                        </div>
+
+                        <div class="column has-text-centered">
+                          <div class="publication-links">
+                              <!-- TODO: Update with your arXiv paper ID (arxiv pdf link) -->
+                            <span class="link-block">
+                              <a href="" target="_blank"
+                              class="external-link button is-normal is-rounded is-dark">
+                              <span class="icon">
+                                <i class="fas fa-file-pdf"></i>
+                              </span>
+                              <span>Paper</span>
+                            </a>
+                          </span>
+
+                          <!-- TODO: Add your supplementary material PDF or remove this section 
+                          <span class="link-block">
+                            <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                              class="external-link button is-normal is-rounded is-dark">
+                              <span class="icon">
+                                <i class="fas fa-file-pdf"></i>
+                              </span>
+                              <span>Supplementary</span>
+                            </a>
+                          </span>
+                          -->
+
+                        <!-- TODO: Replace with your GitHub repository URL -->
+                        <span class="link-block">
+                          <a href="https://github.com/sekhar-mandalaparthi/CAReFuseNet_code" target="_blank"
+                          class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon">
+                            <i class="fab fa-github"></i>
+                          </span>
+                          <span>Code</span>
+                        </a>
+                      </span>
+
+                      <!-- TODO: Update with your arXiv paper ID (arxiv pdf link) -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
+                          <i class="ai ai-arxiv"></i>
                         </span>
-                        <span>Paper</span>
+                        <span>arXiv</span>
                       </a>
                     </span>
-
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- TODO: Update with your arXiv paper ID -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
-<!-- Teaser Image (Figure 1 of paper)-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <div class="content has-text-justified">
-        <!-- Figure: First (teaser) figure -->
-        <figure class="result-figure narrow">
-          <img src="static/images/CAReFuseNet_Fig1.png" alt="CAReFuseNet Capability">
-          <figcaption>
-            Despite variation in pose, appearance, shape and size between reference and target object instances, our CAReFuseNet segments camouflaged objects in the input image under the guidance of the salient reference image.
-          </figcaption>
-        </figure>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End teaser -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
-          <p>
-            The Referring Camouflaged Object Detection (Ref-COD) task aims to generate a binary segmentation mask to detect camouflaged objects
-            of a specified category in an image, guided by reference image(s) containing salient example(s) of the target object of the same category.
-            With only a few methods (e.g., R2CNet and UAT) proposed to date, Ref-COD remains challenging due to the similarity of camouflaged objects
-            to their backgrounds and substantial feature gaps with salient references. At the same time, recent state-of-the-art approaches often
-            rely on heavy transformer-based encoder–decoder stacks or large frozen vision backbones, resulting in substantial parameter footprints
-            that hinder efficient deployment.
-            <br>
-            This work proposes `CAReFuseNet’, a novel framework featuring a cross-attention based reference feature fusion module that effectively extracts
-            reference-conditioned feature representations from camouflaged images while targeting parameter efficiency. The proposed CAReFuse module
-            leverages global interactions between reference and camouflaged image features via cross-attention, but constrains all fusion and decoding operations
-            to a lower dimensional feature space and employs a lightweight convolutional decoder. Combined with a frozen Ref-Image Encoder,
-            this design yields a compact Ref-COD model without sacrificing accuracy.
-            <br>
-            Extensive experiments on the R2C7K dataset show that our method achieves competitive performance against the state-of-the-art,
-            while using significantly fewer parameters. Further evaluations across multiple backbone architectures, including Swin Transformer,
-            ConvNeXt, EfficientNet, and ResNet, demonstrate that the proposed reference feature fusion module provides a general and parameter-efficient
-            building block for the referring camouflaged object detection task.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-<!-- Method -->
-<section class="section" id="method-section">
-  <div class="container is-max-desktop">
-      <div class=hero-body>
-        <h2 class="title is-3">Method</h2>
-        <div class="content has-text-justified">
-          <!-- Figure: CAReFuseNet Architecture -->
-          <figure class="result-figure">
-            <img src="static/images/CAReFuseNet.png" alt="CAReFuseNet Architecture">
-            <figcaption>
-              <strong>Overall architecture of CAReFuseNet:</strong>
-              Ref-Image Encoder extracts features from reference images
-              containing salient target objects. Ref-Feature Combiner
-              combines individual reference image features to form a common feature
-              representation, <em>E</em>, of the target object.
-              Camo-Image Encoder extracts multi-scale features from
-              input camouflaged image <em>I<sup> camo</sup></em>.
-              CAReFuse Module fuses feature representations of the
-              salient target object with multi-scale features of
-              <em>I<sup> camo</sup></em>. Segmentation Decoder
-              generates a segmentation mask using the reference-conditioned feature
-              representations.
-            </figcaption>
-          </figure>
-          <br>
-          <!-- Figure: CAReFuse Module -->
-           <figure class="result-figure">
-            <img src="static/images/CAReFuse_Module.png" alt="CAReFuse Module">
-            <figcaption>
-              <strong>CAReFuse Module</strong>: cross-attention-based feature
-              fusion module that fuses reference image features with multi-scale
-              camouflaged image features. (a) <em>Cross-Attention Fusion (CAF)
-              Module:</em> fuses reference image features <em>E</em> with multi-scale
-              camouflaged image features <em>F</em><sub>1</sub>, <em>F</em><sub>2</sub>,
-              <em>F</em><sub>3</sub>, and <em>F</em><sub>4</sub> individually.
-              (b) <em>Cross-Attention (CA) Module:</em> performs multi-head
-              cross-attention using camouflaged image features for <em>queries</em> and
-              reference image features for <em>keys</em> and <em>values</em>.
-              (c) <em>Multi-Scale Fusion (MSF) Module:</em> fuses
-              reference-conditioned multi-scale features of the camouflaged image into
-              a single feature volume through cross-scale fusion.
-              (d) <em>Cross-Scale Fusion (CSF) Module:</em> fuses a feature volume
-              of lower spatial dimension with a feature volume of higher spatial
-              dimension through convolution and upsampling operations.
-              &oplus; — element-wise sum, &otimes; — element-wise multiplication, and
-              &#9426; — concatenation operation.
-            </figcaption>
-           </figure>
-        </div>
-      </div>
-  </div>
-</section>
-<!-- End Method -->
-
-<!-- Results -->
-<section class="section" id="results-section">
-  <div class="container is-max-desktop">
-      <div class=hero-body>
-        <h2 class="title is-3">Results</h2>
-        <h3 class="subtitle">Quantitative Results:</h3>
-        <div class="content has-text-justified">
-
-          <!-- Table: Comparison with other Ref-COD models -->
-          <figure class="result-figure">
-            <img src="static/images/model_comparison.png" alt="Model Comparison">
-            <figcaption>
-              <strong>Comparison with other Ref-COD models.</strong>
-              <em>-Ref</em>: R2CNet's referring framework applied to the existing COD
-              model (results taken from <a href="#">Zhang et al., (2025)</a>).
-              <em>Tr.Params</em>: Number of trainable parameters in millions.
-              <em>Tot.Params</em>: Number of total parameters in millions.
-              <em>MACs</em>: Multiply-accumulate operations in billions.
-              ↑: the higher the better.
-              ↓: the lower the better.
-              Settings: image size 352 × 352, number of reference images <em>K</em> = 5.
-              For Ours, metrics are reported as mean (± std) over three random seed runs.
-              The best two values are shown in <strong>bold</strong> and
-              <u>underline</u>, respectively. Results of R2CNet and UAT are taken from
-              their respective prior works.
-            </figcaption>
-          </figure>
-          <br>
-          <!-- Table: Comparison with CIRCOD -->
-          <figure class="result-figure narrow">
-            <img src="static/images/comparison_with_circod.png" alt="Comparison with CIRCOD">
-            <figcaption>
-              <strong>Comparison with CIRCOD (under the Ref-COD setting):</strong> Settings: image size
-              512 × 512, number of reference images <em>K</em> = 1. The best two values
-              are shown in <strong>bold</strong> and <u>underline</u>, respectively.
-              The results of CIRCOD are taken from the prior work
-              <a href="#">Gupta et al., (2025)</a>.
-            </figcaption>
-          </figure>
-          <br>
-          <!-- Table: Ablation on cd -->
-          <figure class="result-figure">
-            <img src="static/images/ablation_on_cd.png" alt="Ablation on Cd">
-            <figcaption>
-              <strong>Ablation on channel dimension (i.e., <em>c</em><sub>d</sub>):</strong> The best values
-              are shown in <strong>bold</strong>. 256 is chosen as the default channel dimension, striking a balance between
-              performance and computational efficiency.
-            </figcaption>
-          </figure>
-          <br>
-          <!-- Figure: Ablation on K -->
-          <figure class="result-figure">
-            <img src="static/images/ablation_on_K.svg" alt="Ablation on K">
-            <figcaption>
-              <strong>Ablation on <em>K</em>:</strong> Comparison among Ours-P, UAT, and R2CNet with respect to the ablation
-              experiment on the number of reference images (i.e., <em>K</em>), where
-              <em>K</em> is varied consistently between training and testing.
-            </figcaption>
-          </figure>
-          <br>
-          <!-- Two images side by side (stacked on mobile) -->
-          <div class="image-pair">
-            <figure class="result-figure">
-              <img src="static/images/ablation_on_RefFeatCombiner.png" alt="Ablation on Ref-Feat-Combiner">
-              <figcaption>
-                <strong>Ablation on Ref Feature Combiner:</strong>
-                <em>CA</em>: Channel Attention, <em>SA</em>: Spatial Attention, <em>CWA</em>: Channel-wise Average.
-                Metrics are reported as mean(&plusmn;std) over three random seed runs.
-              </figcaption>
-            </figure>
-
-            <figure class="result-figure">
-              <img src="static/images/ablation_on_CarefuseModule.png" alt="Ablation on CAReFuse module">
-              <figcaption>
-                <strong>Ablation on CAReFuse module:</strong>
-                <em>CAF</em>: Cross Attention Fusion, <em>MSF</em>: Multi Scale Fusion.
-                Metrics are reported as mean(&plusmn;std) over three random seed runs.
-              </figcaption>
-            </figure>
+      <!-- Teaser Image (Figure 1 of paper)-->
+      <section class="hero teaser">
+          <div class="container is-max-desktop">
+            <div class="hero-body">
+              <div class="content has-text-justified">
+                <!-- Figure: First (teaser) figure -->
+                <figure class="result-figure narrow">
+                  <img src="static/images/CAReFuseNet_Fig1.png" alt="CAReFuseNet Capability">
+                  <figcaption>
+                    Despite variation in pose, appearance, shape and size between reference and target object instances, our CAReFuseNet segments camouflaged objects in the input image under the guidance of the salient reference image.
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
           </div>
-        </div>
-        <br>
-        <h3 class="subtitle">Qualitative Results:</h3>
-        <div class="content has-text-justified">
-          <!-- Figure: Qualitative Evaluation -->
-          <figure class="result-figure">
-            <img src="static/images/Qualitative_Eval.svg" alt="Qualitative Evaluation">
-            <figcaption>
-            <strong>Qaulitative Evaluation:</strong> Visual comparison between the predicted masks of CAReFuseNet (Ours-P) and other Ref-COD methods (<em>i.e.</em> R2CNet, UAT).
-            Our method outperforms the rest.
-          </figcaption>
-          </figure>
-          <br>
-          <!-- Figure: High quality edges -->
-          <figure class="result-figure narrow">
-            <img src="static/images/High_Quality_Edges.svg" alt="High quality edges">
-            <figcaption>
-              <strong>High Quality masks:</strong> Comparison between the predicted masks of R2CNet, UAT, and Ours-P for camouflaged objects with high-frequency edges,
-              highlighting the superior mask quality and finer detail capture of Ours-P.
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-  </div>
-</section>
-<!-- End Results -->
+      </section>
+      <!-- End teaser -->
 
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-          <i class="fas fa-copy"></i>
-          <span class="copy-text">Copy</span>
-        </button>
-      </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
-}</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
+      <!-- Paper abstract -->
+      <section class="section hero is-light">
+          <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+              <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                  <!-- TODO: Replace with your paper abstract -->
+                  <p>
+                    The Referring Camouflaged Object Detection (Ref-COD) task aims to generate a binary segmentation mask to detect camouflaged objects
+                    of a specified category in an image, guided by reference image(s) containing salient example(s) of the target object of the same category.
+                    With only a few methods (e.g., R2CNet and UAT) proposed to date, Ref-COD remains challenging due to the similarity of camouflaged objects
+                    to their backgrounds and substantial feature gaps with salient references. At the same time, recent state-of-the-art approaches often
+                    rely on heavy transformer-based encoder–decoder stacks or large frozen vision backbones, resulting in substantial parameter footprints
+                    that hinder efficient deployment.
+                    <br>
+                    This work proposes `CAReFuseNet’, a novel framework featuring a cross-attention based reference feature fusion module that effectively extracts
+                    reference-conditioned feature representations from camouflaged images while targeting parameter efficiency. The proposed CAReFuse module
+                    leverages global interactions between reference and camouflaged image features via cross-attention, but constrains all fusion and decoding operations
+                    to a lower dimensional feature space and employs a lightweight convolutional decoder. Combined with a frozen Ref-Image Encoder,
+                    this design yields a compact Ref-COD model without sacrificing accuracy.
+                    <br>
+                    Extensive experiments on the R2C7K dataset show that our method achieves competitive performance against the state-of-the-art,
+                    while using significantly fewer parameters. Further evaluations across multiple backbone architectures, including Swin Transformer,
+                    ConvNeXt, EfficientNet, and ResNet, demonstrate that the proposed reference feature fusion module provides a general and parameter-efficient
+                    building block for the referring camouflaged object detection task.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!-- End paper abstract -->
 
+      <!-- Method -->
+      <section class="section" id="method-section">
+          <div class="container is-max-desktop">
+              <div class=hero-body>
+                <h2 class="title is-3">Method</h2>
+                <div class="content has-text-justified">
+                  <!-- Figure: CAReFuseNet Architecture -->
+                  <figure class="result-figure">
+                    <img src="static/images/CAReFuseNet.png" alt="CAReFuseNet Architecture">
+                    <figcaption>
+                      <strong>Overall architecture of CAReFuseNet:</strong>
+                      Ref-Image Encoder extracts features from reference images
+                      containing salient target objects. Ref-Feature Combiner
+                      combines individual reference image features to form a common feature
+                      representation, <em>E</em>, of the target object.
+                      Camo-Image Encoder extracts multi-scale features from
+                      input camouflaged image <em>I<sup> camo</sup></em>.
+                      CAReFuse Module fuses feature representations of the
+                      salient target object with multi-scale features of
+                      <em>I<sup> camo</sup></em>. Segmentation Decoder
+                      generates a segmentation mask using the reference-conditioned feature
+                      representations.
+                    </figcaption>
+                  </figure>
+                  <br>
+                  <!-- Figure: CAReFuse Module -->
+                  <figure class="result-figure">
+                    <img src="static/images/CAReFuse_Module.png" alt="CAReFuse Module">
+                    <figcaption>
+                      <strong>CAReFuse Module</strong>: cross-attention-based feature
+                      fusion module that fuses reference image features with multi-scale
+                      camouflaged image features. (a) <em>Cross-Attention Fusion (CAF)
+                      Module:</em> fuses reference image features <em>E</em> with multi-scale
+                      camouflaged image features <em>F</em><sub>1</sub>, <em>F</em><sub>2</sub>,
+                      <em>F</em><sub>3</sub>, and <em>F</em><sub>4</sub> individually.
+                      (b) <em>Cross-Attention (CA) Module:</em> performs multi-head
+                      cross-attention using camouflaged image features for <em>queries</em> and
+                      reference image features for <em>keys</em> and <em>values</em>.
+                      (c) <em>Multi-Scale Fusion (MSF) Module:</em> fuses
+                      reference-conditioned multi-scale features of the camouflaged image into
+                      a single feature volume through cross-scale fusion.
+                      (d) <em>Cross-Scale Fusion (CSF) Module:</em> fuses a feature volume
+                      of lower spatial dimension with a feature volume of higher spatial
+                      dimension through convolution and upsampling operations.
+                      &oplus; — element-wise sum, &otimes; — element-wise multiplication, and
+                      &#9426; — concatenation operation.
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+          </div>
+      </section>
+      <!-- End Method -->
 
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
+      <!-- Results -->
+      <section class="section" id="results-section">
+          <div class="container is-max-desktop">
+              <div class=hero-body>
+                <h2 class="title is-3">Results</h2>
+                <h3 class="subtitle">Quantitative Results:</h3>
+                <div class="content has-text-justified">
 
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
+                  <!-- Table: Comparison with other Ref-COD models -->
+                  <figure class="result-figure">
+                    <img src="static/images/model_comparison.png" alt="Model Comparison">
+                    <figcaption>
+                      <strong>Comparison with other Ref-COD models.</strong>
+                      <em>-Ref</em>: R2CNet's referring framework applied to the existing COD
+                      model (results taken from <a href="#">Zhang et al., (2025)</a>).
+                      <em>Tr.Params</em>: Number of trainable parameters in millions.
+                      <em>Tot.Params</em>: Number of total parameters in millions.
+                      <em>MACs</em>: Multiply-accumulate operations in billions.
+                      ↑: the higher the better.
+                      ↓: the lower the better.
+                      Settings: image size 352 × 352, number of reference images <em>K</em> = 5.
+                      For Ours, metrics are reported as mean (± std) over three random seed runs.
+                      The best two values are shown in <strong>bold</strong> and
+                      <u>underline</u>, respectively. Results of R2CNet and UAT are taken from
+                      their respective prior works.
+                    </figcaption>
+                  </figure>
+                  <br>
+                  <!-- Table: Comparison with CIRCOD -->
+                  <figure class="result-figure narrow">
+                    <img src="static/images/comparison_with_circod.png" alt="Comparison with CIRCOD">
+                    <figcaption>
+                      <strong>Comparison with CIRCOD (under the Ref-COD setting):</strong> Settings: image size
+                      512 × 512, number of reference images <em>K</em> = 1. The best two values
+                      are shown in <strong>bold</strong> and <u>underline</u>, respectively.
+                      The results of CIRCOD are taken from the prior work
+                      <a href="#">Gupta et al., (2025)</a>.
+                    </figcaption>
+                  </figure>
+                  <br>
+                  <!-- Table: Ablation on cd -->
+                  <figure class="result-figure">
+                    <img src="static/images/ablation_on_cd.png" alt="Ablation on Cd">
+                    <figcaption>
+                      <strong>Ablation on channel dimension (i.e., <em>c</em><sub>d</sub>):</strong> The best values
+                      are shown in <strong>bold</strong>. 256 is chosen as the default channel dimension, striking a balance between
+                      performance and computational efficiency.
+                    </figcaption>
+                  </figure>
+                  <br>
+                  <!-- Figure: Ablation on K -->
+                  <figure class="result-figure">
+                    <img src="static/images/ablation_on_K.svg" alt="Ablation on K">
+                    <figcaption>
+                      <strong>Ablation on <em>K</em>:</strong> Comparison among Ours-P, UAT, and R2CNet with respect to the ablation
+                      experiment on the number of reference images (i.e., <em>K</em>), where
+                      <em>K</em> is varied consistently between training and testing.
+                    </figcaption>
+                  </figure>
+                  <br>
+                  <!-- Two images side by side (stacked on mobile) -->
+                  <div class="image-pair">
+                    <figure class="result-figure">
+                      <img src="static/images/ablation_on_RefFeatCombiner.png" alt="Ablation on Ref-Feat-Combiner">
+                      <figcaption>
+                        <strong>Ablation on Ref Feature Combiner:</strong>
+                        <em>CA</em>: Channel Attention, <em>SA</em>: Spatial Attention, <em>CWA</em>: Channel-wise Average.
+                        Metrics are reported as mean(&plusmn;std) over three random seed runs.
+                      </figcaption>
+                    </figure>
 
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
+                    <figure class="result-figure">
+                      <img src="static/images/ablation_on_CarefuseModule.png" alt="Ablation on CAReFuse module">
+                      <figcaption>
+                        <strong>Ablation on CAReFuse module:</strong>
+                        <em>CAF</em>: Cross Attention Fusion, <em>MSF</em>: Multi Scale Fusion.
+                        Metrics are reported as mean(&plusmn;std) over three random seed runs.
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <br>
+                <h3 class="subtitle">Qualitative Results:</h3>
+                <div class="content has-text-justified">
+                  <!-- Figure: Qualitative Evaluation -->
+                  <figure class="result-figure">
+                    <img src="static/images/Qualitative_Eval.svg" alt="Qualitative Evaluation">
+                    <figcaption>
+                    <strong>Qaulitative Evaluation:</strong> Visual comparison between the predicted masks of CAReFuseNet (Ours-P) and other Ref-COD methods (<em>i.e.</em> R2CNet, UAT).
+                    Our method outperforms the rest.
+                  </figcaption>
+                  </figure>
+                  <br>
+                  <!-- Figure: High quality edges -->
+                  <figure class="result-figure narrow">
+                    <img src="static/images/High_Quality_Edges.svg" alt="High quality edges">
+                    <figcaption>
+                      <strong>High Quality masks:</strong> Comparison between the predicted masks of R2CNet, UAT, and Ours-P for camouflaged objects with high-frequency edges,
+                      highlighting the superior mask quality and finer detail capture of Ours-P.
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+          </div>
+      </section>
+      <!-- End Results -->
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+      <!--BibTex citation -->
+      <section class="section" id="BibTeX">
+            <div class="container is-max-desktop content">
+              <div class="bibtex-header">
+                <h2 class="title">BibTeX</h2>
+                <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+                  <i class="fas fa-copy"></i>
+                  <span class="copy-text">Copy</span>
+                </button>
+              </div>
+              <pre id="bibtex-code"><code>@article{YourPaperKey2024,
+          title={Your Paper Title Here},
+          author={First Author and Second Author and Third Author},
+          journal={Conference/Journal Name},
+          year={2024},
+          url={https://your-domain.com/your-project-page}
+        }</code></pre>
+            </div>
+      </section>
+      <!--End BibTex citation -->
 
-    <!-- End of Statcounter Code -->
+      <footer class="footer">
+          <div class="container">
+            <div class="columns is-centered">
+              <div class="column is-8">
+                <div class="content">
+                  <p>
+                    This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+                    You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                    Commons Attribution-ShareAlike 4.0 International License</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </footer>
 
+      <!-- Statcounter tracking code --> 
+      <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+      <!-- End of Statcounter Code -->
   </body>
-  </html>
+</html>
